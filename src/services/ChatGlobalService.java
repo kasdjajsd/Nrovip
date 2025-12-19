@@ -81,12 +81,6 @@ public class ChatGlobalService implements Runnable {
 
     @Override
     public void run() {
-
-        if (player != null && player.name.equalsIgnoreCase("admin") && text.equalsIgnoreCase("boss")) {
-            boss.BossManager.gI().sendBossStatusMenu(player);
-            return;
-        }
- {
         while (!Maintenance.isRunning) {
             try {
                 if (!listChatting.isEmpty()) {
